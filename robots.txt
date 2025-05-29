@@ -1,7 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /admin/
-Disallow: /private/
-Disallow: /README.md
-
-Sitemap: https://www.isecpolymers.com/sitemap.xml 
