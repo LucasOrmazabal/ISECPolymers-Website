@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISEC Polymers</title>
+    <meta name="description" content="ISEC Polymers - Comercializamos materias primas plásticas de alta calidad. Polietileno, polipropileno, PVC y más.">
+    <meta name="keywords" content="ISEC Polymers, materias primas plásticas, polietileno, polipropileno, PVC, plásticos de ingeniería">
+    <meta name="author" content="ISEC S.A.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="ISEC Polymers">
+    <meta property="og:description" content="Comercializamos materias primas plásticas de alta calidad. Polietileno, polipropileno, PVC y más.">
+    <meta property="og:image" content="https://res.cloudinary.com/ddbj2yp5y/image/upload/v1747255681/logo.ISEC.home_iwrv9f.png">
+    <meta property="og:url" content="https://www.isecpolymers.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://www.isecpolymers.com">
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/ddbj2yp5y/image/upload/v1748526967/Captura_de_pantalla_2025-05-29_105343_clpsew.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-['Inter']">
+    <!-- Header -->
+    <header id="main-header" class="fixed w-full z-50 transition-all duration-300">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="#" class="text-white text-2xl font-bold scroll-smooth" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                        <img class="h-20 md:h-24 w-auto" src="https://res.cloudinary.com/ddbj2yp5y/image/upload/v1747255681/logo.ISEC.home_iwrv9f.png" alt="logo">
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8 lg:space-x-12">
+                    <a href="#nosotros" class="nav-link text-lg">Nosotros</a>
+                    <a href="#productos" class="nav-link text-lg">Productos</a>
+                    <a href="#soluciones" class="nav-link text-lg">Soluciones</a>
+                    <a href="#contacto" class="nav-link text-lg">Contacto</a>
+                    <div class="language-selector">
+                        <select id="desktop-language-selector" class="bg-transparent text-white border border-white rounded px-3 py-2 text-lg">
+                            <option value="es">Español</option>
+                            <option value="en">English</option>
+                            <option value="pt">Português</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-[#444444] w-full">
+            <div class="container mx-auto px-4 py-4">
+                <button id="close-menu" class="absolute top-4 right-4 text-white hover:text-[#f4b72b] transition-colors">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <a href="#nosotros" class="block text-white py-2">Nosotros</a>
+                <a href="#productos" class="block text-white py-2">Productos</a>
+                <a href="#soluciones" class="block text-white py-2">Soluciones</a>
+                <a href="#contacto" class="block text-white py-2">Contacto</a>
+                <div class="language-selector mt-4">
+                    <select id="mobile-language-selector" class="w-full bg-transparent text-white border border-white rounded px-2 py-1">
+                        <option value="es">Español</option>
+                        <option value="en">English</option>
+                        <option value="pt">Português</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative h-screen flex items-center justify-center text-white">
+        <!-- Video Background -->
+        <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop>
+            <source src="https://res.cloudinary.com/ddbj2yp5y/video/upload/v1747256009/video.ISEC.HERO_o2zz8a.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10 text-center">
+            <h1 class="text-4xl py-2 md:text-6xl font-bold mb-4">ISEC POLYMERS</h1>
+            <p class="text-xl md:text-2xl">Somos el mejor y mas confiable nexo entre tu fabrica <br> y la materia prima plastica de la mejor calidad</p>
+        </div>
+    </section>
+
+    <!-- Nosotros Section -->
+    <section id="nosotros" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="fade-in-left">
+                    <h2 class="text-3xl font-bold mb-6">Nosotros</h2>
+                    <p class="text-gray-600">
+                        Comericializamos una amplia gama de materias primas plásticas tales como polietileno, polipropileno, PVC, plásticos de ingeniería, aditivos y otros combinando excelencia en el servicio al cliente y productos de máxima calidad a nivel internacional.
+                    </p>
+                </div>
+                <div class="carousel-container fade-in-right">
+                    <div class="carousel" id="nosotros-carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item">
+                                <img src="https://res.cloudinary.com/ddbj2yp5y/image/upload/v1748470523/ISEC_S.A_qdrwew.png" alt="Equipo de trabajo" class="w-full h-full object-cover">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://res.cloudinary.com/ddbj2yp5y/image/upload/v1748470594/slide-3_hboi3c.jpg" alt="Oficina moderna" class="w-full h-full object-cover">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://res.cloudinary.com/ddbj2yp5y/image/upload/v1748525982/vista-aerea-del-buque-de-carga-y-del-contenedor-de-carga-en-el-puerto_1_ujiyls.jpg" alt="Tecnología" class="w-full h-full object-cover">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://res.cloudinary.com/ddbj2yp5y/image/upload/v1748470806/mujer-sosteniendo-botellas-de-tiro-medio_nhujqt.jpg" alt="Tecnología" class="w-full h-full object-cover">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://res.cloudinary.com/ddbj2yp5y/image/upload/v1748526125/vista-aerea-de-drone-de-una-bodega-cisternas-metalicas-con-arboles-desnudos-y-campos-su-alrededor-en-moldavia_e83fqk.jpg" alt="Tecnología" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <button class="carousel-control prev" aria-label="Anterior">❮</button>
+                        <button class="carousel-control next" aria-label="Siguiente">❯</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos Section -->
+    <section id="productos" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 fade-in-up">Nuestros Productos</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="product-card" data-delay="100">
+                    <h3 class="text-xl font-bold mb-4">Polietileno HDPE/LDPE/LLDPE</h3>
+                    <p class="text-gray-600">HDPE: Resistencia, rigidez y durabilidad <br> LDPE: Flexible, liviano y resistente a la humedad <br> LLDPE: Estructura molecular lineal</p>
+                    <div class="product-image" style="background-image: url('https://res.cloudinary.com/ddbj2yp5y/image/upload/v1748523707/polietileno_cgsvre.jpg')"></div>
+                </div>
+                <div class="product-card" data-delay="200">
+                    <h3 class="text-xl font-bold mb-4">Polipropileno</h3>
+                    <p class="text-gray-600">Termoplástico liviano, resistente al calor y a productos químicos.</p>
+                    <div class="product-image" style="background-image: url('https://res.cloudinary.com/ddbj2yp5y/image/upload/v1748524082/polipropileno_osjmk7.jpg')"></div>
+                </div>
+                <div class="product-card" data-delay="300">
+                    <h3 class="text-xl font-bold mb-4">Carbonato de Calcio (CaCo3)</h3>
+                    <p class="text-gray-600"> aditivo mineral que se mezcla con polímeros (como PP o PE) para reducir costos, aumentar rigidez y mejorar procesabilidad.</p>
+                    <div class="product-image" style="background-image: url('https://res.cloudinary.com/ddbj2yp5y/image/upload/v1748524896/carbonato_no07fy.png')"></div>
+                </div>
+                <div class="product-card" data-delay="400">
+                    <h3 class="text-xl font-bold mb-4">Plasticos De Ingeniería</h3>
+                    <p class="text-gray-600">Grupo de plásticos de alto rendimiento con mejor resistencia mecánica, térmica y química que los plásticos comunes.</p>
+                    <div class="product-image" style="background-image: url('https://res.cloudinary.com/ddbj2yp5y/image/upload/v1748524850/pl-ingenieria_spww2d.jpg')"></div>
+                </div>
+                <div class="product-card" data-delay="500">
+                    <h3 class="text-xl font-bold mb-4">PVC (Policloruro de Vinilo)</h3>
+                    <p class="text-gray-600">Resistente a la intemperie y químicos, con buena aislación eléctrica.</p>
+                    <div class="product-image" style="background-image: url('https://res.cloudinary.com/ddbj2yp5y/image/upload/v1748524862/PVC_vcs357.jpg')"></div>
+                </div>
+                <div class="product-card" data-delay="600">
+                    <h3 class="text-xl font-bold mb-4">PET  (Polietileno Tereftalato)</h3>
+                    <p class="text-gray-600">Plástico transparente, fuerte y liviano, muy usado en botellas, envases y textiles (poliéster). Reciclable, con buena barrera contra gases. Apto para alimentos y bebidas por su seguridad y claridad.</p>
+                    <div class="product-image" style="background-image: url('https://res.cloudinary.com/ddbj2yp5y/image/upload/v1748524808/PET_dhxxox.jpg')"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KPI Section -->
+    <section id="kpi" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 md:gap-8 text-center">
+                <div class="kpi-item animate-on-scroll p-4">
+                    <div class="kpi-value text-4xl md:text-5xl font-bold mb-2" data-value="5">0</div>
+                    <p class="text-base md:text-lg font-semibold">Países</p>
+                </div>
+                <div class="kpi-item animate-on-scroll p-4">
+                    <div class="kpi-value text-4xl md:text-5xl font-bold mb-2" data-value="3500">0</div>
+                    <p class="text-base md:text-lg font-semibold">tons./mes</p>
+                </div>
+                <div class="kpi-item animate-on-scroll p-4">
+                    <div class="kpi-value text-4xl md:text-5xl font-bold mb-2" data-value="25">0</div>
+                    <p class="text-base md:text-lg font-semibold">Industrias</p>
+                </div>
+                <div class="kpi-item animate-on-scroll p-4">
+                    <div class="kpi-value text-4xl md:text-5xl font-bold mb-2" data-value="1000">0</div>
+                    <p class="text-base md:text-lg font-semibold">Clientes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marcas Section -->
+    <section id="marcas" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4 fade-in-up">Clientes y Partners Principales</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto fade-in-up">Colaboramos con las empresas más importantes del sector para ofrecer materiales de la más alta calidad</p>
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="brand-card fade-in-up" data-delay="100">
+                    <div class="brand-logo">
+                        <img src="https://res.cloudinary.com/ddbj2yp5y/image/upload/v1748465199/Logo-Pairing-NHG-Mega-01_d2iqff.png" alt="Marca 1" class="w-full h-auto object-contain">
+                    </div>
+                    <h3 class="text-xl font-semibold mt-4 text-center">Megaplast - Nhat Huy Group</h3>
+                    <p class="text-gray-600 text-center mt-2">Descripción breve del partner</p>
+                </div>
+                <div class="brand-card fade-in-up" data-delay="200">
+                    <div class="brand-logo">
+                        <img src="https://res.cloudinary.com/ddbj2yp5y/image/upload/v1748463715/0EA6B119-DC28-4960-A1BB-36D5836C215E_nhttme.png" alt="Marca 2" class="w-full h-auto object-contain">
+                    </div>
+                    <h3 class="text-xl font-semibold mt-4 text-center">PoPlastics SRL</h3>
+                    <p class="text-gray-600 text-center mt-2">Descripción breve del partner</p>
+                </div>
+                <div class="brand-card fade-in-up" data-delay="300">
+                    <div class="brand-logo">
+                        <img src="https://res.cloudinary.com/ddbj2yp5y/image/upload/v1748464534/Rectangle_x7f7yy.png" alt="Marca 3" class="w-full h-auto object-contain">
+                    </div>
+                    <h3 class="text-xl font-semibold mt-4 text-center"> Esenttia </h3>
+                    <p class="text-gray-600 text-center mt-2">Descripción breve del partner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soluciones Section -->
+    <section id="soluciones" class="py-20 relative">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://res.cloudinary.com/ddbj2yp5y/image/upload/v1748453666/vista-aerea-del-buque-de-carga-y-del-contenedor-de-carga-en-el-puerto_wfgati.jpg');"></div>
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <h2 class="text-3xl font-bold text-white text-center mb-12 fade-in-up">Soluciones</h2>
+            <div class="solutions-container fade-in-up max-w-4xl mx-auto">
+                <div class="solutions-content">
+                    <h3 class="text-2xl font-bold mb-6">Abastecimiento Estratégico y Asistencia Técnica</h3>
+                    <p class="text-gray-800 mb-6">
+                        Brindamos soluciones integrales en el abastecimiento de materias primas plásticas vitales para la industria. Comprendiendo asistencia técnica, desarrollo de productos, soluciones logísticas y financieras; asociados a las principales petroquímicas a nivel internacional contando con gran experiencia en el mercado.
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="text-4xl text-[#f4b72b] mb-2">
+                                <i class="fas fa-ship"></i>
+                            </div>
+                            <h4 class="font-bold mb-2">Transporte seguro</h4>
+                            <p class="text-gray-600">Contamos con los mejores <br> servicios de transporte</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl text-[#f4b72b] mb-2">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4 class="font-bold mb-2">Eficiencia</h4>
+                            <p class="text-gray-600">Optimizacion en procesos de <br> documentos y tramites</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl text-[#f4b72b] mb-2">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4 class="font-bold mb-2">Seguridad</h4>
+                            <p class="text-gray-600">Proceso seguro de punta a punta hasta la entrega</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 fade-in-up">Contacto</h2>
+            <div class="form-container fade-in-up">
+                <form id="contact-form" class="max-w-2xl mx-auto">
+                    <div class="form-group mb-6">
+                        <input type="text" id="from_name" name="from_name" placeholder=" " required>
+                        <label for="from_name">Nombre</label>
+                    </div>
+                    <div class="form-group mb-6">
+                        <input type="email" id="from_email" name="from_email" placeholder=" " required>
+                        <label for="from_email">Email</label>
+                    </div>
+                    <div class="form-group mb-6">
+                        <textarea id="from_message" name="from_message" rows="4" placeholder=" " required></textarea>
+                        <label for="from_message">Mensaje</label>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#444444] text-white py-8 relative">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid md:grid-cols-3 gap-4">
+                <!-- Logo y Contacto -->
+                <div class="footer-section animate-on-scroll">
+                    <img class="h-24 w-auto mb-4" src="https://res.cloudinary.com/ddbj2yp5y/image/upload/v1747255681/logo.ISEC.home_iwrv9f.png" alt="ISEC Polymers Logo">
+                </div>
+
+                <!-- Contacto -->
+                <div class="footer-section animate-on-scroll">
+                    <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+                    <p class="text-gray-300">Email: info@isecpolymers.com</p>
+                    <p class="text-gray-300">Teléfono: +1 234 567 890</p>
+                    <p class="text-gray-300 mt-2">
+                        <a href="https://maps.app.goo.gl/gRzxWXFqzTZ3HdHd6" target="_blank" class="hover:text-[#f4b72b] transition-colors">
+                            Misiones 1361, oficina 37. Montevideo, Uruguay.
+                        </a>
+                    </p>
+                    <div class="mt-4">
+                        <a href="#" class="text-gray-300 hover:text-[#f4b72b] transition-colors">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mapa (visible solo en desktop) -->
+                <div class="footer-section animate-on-scroll hidden md:block">
+                    <h4 class="text-lg font-semibold mb-4">Ubicación</h4>
+                    <div class="map-container rounded-lg overflow-hidden shadow-lg h-[500px]">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1635.975534195729!2d-56.20715302162958!3d-34.90767744555174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f7f80fe97e341%3A0x65570e90ec420da0!2sMisiones%201361%2C%2011000%20Montevideo%2C%20Departamento%20de%20Montevideo%2C%20Uruguay!5e0!3m2!1ses-419!2sar!4v1748447003611!5m2!1ses-419!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-gray-700 text-center">
+                <p class="text-gray-400">&copy; ISEC S.A. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('Kh7HeSiMACQXWIbZU');
+        })();
+    </script>
+    
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle"></i>
+            <div class="message">
+                <span class="text text-1">Éxito</span>
+                <span class="text text-2">Tu mensaje ha sido enviado correctamente</span>
+            </div>
+        </div>
+        <i class="fas fa-times close"></i>
+        <div class="progress"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Language switching functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const desktopSelector = document.getElementById('desktop-language-selector');
+            const mobileSelector = document.getElementById('mobile-language-selector');
+            
+            // Translations object
+            const translations = {
+                es: {
+                    nav: {
+                        nosotros: 'Nosotros',
+                        productos: 'Productos',
+                        soluciones: 'Soluciones',
+                        contacto: 'Contacto'
+                    },
+                    hero: {
+                        title: 'ISEC POLYMERS',
+                        subtitle: 'Somos el mejor y mas confiable nexo entre tu fabrica y la materia prima plastica de la mejor calidad'
+                    },
+                    nosotros: {
+                        title: 'Nosotros',
+                        description: 'Comericializamos una amplia gama de materias primas plásticas tales como polietileno, polipropileno, PVC, plásticos de ingeniería, aditivos y otros combinando excelencia en el servicio al cliente y productos de máxima calidad a nivel internacional.'
+                    },
+                    productos: {
+                        title: 'Nuestros Productos',
+                        hdpe: {
+                            title: 'Polietileno HDPE/LDPE/LLDPE',
+                            description: 'HDPE: Resistencia, rigidez y durabilidad \n LDPE: Flexible, liviano y resistente a la humedad \n LLDPE: Estructura molecular lineal'
+                        },
+                        pp: {
+                            title: 'Polipropileno',
+                            description: 'Termoplástico liviano, resistente al calor y a productos químicos.'
+                        },
+                        caco3: {
+                            title: 'Carbonato de Calcio (CaCo3)',
+                            description: 'aditivo mineral que se mezcla con polímeros (como PP o PE) para reducir costos, aumentar rigidez y mejorar procesabilidad.'
+                        },
+                        engineering: {
+                            title: 'Plasticos De Ingeniería',
+                            description: 'Grupo de plásticos de alto rendimiento con mejor resistencia mecánica, térmica y química que los plásticos comunes.'
+                        },
+                        pvc: {
+                            title: 'PVC (Policloruro de Vinilo)',
+                            description: 'Resistente a la intemperie y químicos, con buena aislación eléctrica.'
+                        },
+                        pet: {
+                            title: 'PET  (Polietileno Tereftalato)',
+                            description: 'Plástico transparente, fuerte y liviano, muy usado en botellas, envases y textiles (poliéster). Reciclable, con buena barrera contra gases. Apto para alimentos y bebidas por su seguridad y claridad.'
+                        }
+                    },
+                    soluciones: {
+                        title: 'Soluciones',
+                        subtitle: 'Abastecimiento Estratégico y Asistencia Técnica',
+                        description: 'Brindamos soluciones integrales en el abastecimiento de materias primas plásticas vitales para la industria. Comprendiendo asistencia técnica, desarrollo de productos, soluciones logísticas y financieras; asociados a las principales petroquímicas a nivel internacional contando con gran experiencia en el mercado.',
+                        features: {
+                            transporte: {
+                                title: 'Transporte seguro',
+                                description: 'Contamos con los mejores servicios de transporte'
+                            },
+                            eficiencia: {
+                                title: 'Eficiencia',
+                                description: 'Optimizacion en procesos de documentos y tramites'
+                            },
+                            seguridad: {
+                                title: 'Seguridad',
+                                description: 'Proceso seguro de punta a punta hasta la entrega'
+                            }
+                        }
+                    },
+                    contacto: {
+                        title: 'Contacto',
+                        nombre: 'Nombre',
+                        email: 'Email',
+                        mensaje: 'Mensaje',
+                        enviar: 'Enviar Mensaje'
+                    },
+                    footer: {
+                        copyright: '© ISEC S.A. All rights reserved.',
+                        ubicacion: 'Ubicación',
+                        email: 'Email: info@isecpolymers.com',
+                        telefono: 'Teléfono: +1 234 567 890'
+                    },
+                    kpi: {
+                        paises: 'Países',
+                        toneladas: 'tons./mes',
+                        industrias: 'Industrias',
+                        clientes: 'Clientes'
+                    },
+                    partners: {
+                        title: 'Clientes y Partners Principales',
+                        subtitle: 'Colaboramos con las empresas más importantes del sector para ofrecer materiales de la más alta calidad',
+                        description: 'Descripción breve del partner'
+                    },
+                    form: {
+                        nombre: 'Nombre',
+                        email: 'Email',
+                        mensaje: 'Mensaje',
+                        enviar: 'Enviar Mensaje',
+                        success: {
+                            title: 'Éxito',
+                            message: 'Tu mensaje ha sido enviado correctamente'
+                        }
+                    }
+                },
+                en: {
+                    nav: {
+                        nosotros: 'About Us',
+                        productos: 'Products',
+                        soluciones: 'Solutions',
+                        contacto: 'Contact'
+                    },
+                    hero: {
+                        title: 'ISEC POLYMERS',
+                        subtitle: 'We are the best and most reliable link between your factory and the highest quality plastic raw material'
+                    },
+                    nosotros: {
+                        title: 'About Us',
+                        description: 'We market a wide range of plastic raw materials such as polyethylene, polypropylene, PVC, engineering plastics, additives and others, combining excellence in customer service and maximum quality products at an international level.'
+                    },
+                    productos: {
+                        title: 'Our Products',
+                        hdpe: {
+                            title: 'Polyethylene HDPE/LDPE/LLDPE',
+                            description: 'HDPE: Strength, rigidity and durability \n LDPE: Flexible, lightweight and moisture resistant \n LLDPE: Linear molecular structure'
+                        },
+                        pp: {
+                            title: 'Polypropylene',
+                            description: 'Lightweight thermoplastic, resistant to heat and chemicals.'
+                        },
+                        caco3: {
+                            title: 'Calcium Carbonate (CaCo3)',
+                            description: 'mineral additive that is mixed with polymers (such as PP or PE) to reduce costs, increase rigidity and improve processability.'
+                        },
+                        engineering: {
+                            title: 'Engineering Plastics',
+                            description: 'Group of high-performance plastics with better mechanical, thermal and chemical resistance than common plastics.'
+                        },
+                        pvc: {
+                            title: 'PVC (Polyvinyl Chloride)',
+                            description: 'Weather and chemical resistant, with good electrical insulation.'
+                        },
+                        pet: {
+                            title: 'PET (Polyethylene Terephthalate)',
+                            description: 'Transparent, strong and lightweight plastic, widely used in bottles, containers and textiles (polyester). Recyclable, with good gas barrier. Suitable for food and beverages due to its safety and clarity.'
+                        }
+                    },
+                    soluciones: {
+                        title: 'Solutions',
+                        subtitle: 'Strategic Supply and Technical Assistance',
+                        description: 'We provide comprehensive solutions in the supply of plastic raw materials vital to the industry. Including technical assistance, product development, logistics and financial solutions; associated with the main international petrochemical companies with extensive market experience.',
+                        features: {
+                            transporte: {
+                                title: 'Safe transport',
+                                description: 'We have the best transport services'
+                            },
+                            eficiencia: {
+                                title: 'Efficiency',
+                                description: 'Optimization in document processes and procedures'
+                            },
+                            seguridad: {
+                                title: 'Security',
+                                description: 'Secure end-to-end process until delivery'
+                            }
+                        }
+                    },
+                    contacto: {
+                        title: 'Contact',
+                        nombre: 'Name',
+                        email: 'Email',
+                        mensaje: 'Message',
+                        enviar: 'Send Message'
+                    },
+                    footer: {
+                        copyright: '© ISEC S.A. All rights reserved.',
+                        ubicacion: 'Location',
+                        email: 'Email: info@isecpolymers.com',
+                        telefono: 'Phone: +1 234 567 890'
+                    },
+                    kpi: {
+                        paises: 'Countries',
+                        toneladas: 'tons/month',
+                        industrias: 'Industries',
+                        clientes: 'Clients'
+                    },
+                    partners: {
+                        title: 'Main Clients and Partners',
+                        subtitle: 'We collaborate with the most important companies in the sector to offer the highest quality materials',
+                        description: 'Brief partner description'
+                    },
+                    form: {
+                        nombre: 'Name',
+                        email: 'Email',
+                        mensaje: 'Message',
+                        enviar: 'Send Message',
+                        success: {
+                            title: 'Success',
+                            message: 'Your message has been sent successfully'
+                        }
+                    }
+                },
+                pt: {
+                    nav: {
+                        nosotros: 'Sobre Nós',
+                        productos: 'Produtos',
+                        soluciones: 'Soluções',
+                        contacto: 'Contato'
+                    },
+                    hero: {
+                        title: 'ISEC POLYMERS',
+                        subtitle: 'Somos o melhor e mais confiável elo entre sua fábrica e a matéria-prima plástica da melhor qualidade'
+                    },
+                    nosotros: {
+                        title: 'Sobre Nós',
+                        description: 'Comercializamos uma ampla gama de matérias-primas plásticas, como polietileno, polipropileno, PVC, plásticos de engenharia, aditivos e outros, combinando excelência no atendimento ao cliente e produtos de máxima qualidade em nível internacional.'
+                    },
+                    productos: {
+                        title: 'Nossos Produtos',
+                        hdpe: {
+                            title: 'Polietileno HDPE/LDPE/LLDPE',
+                            description: 'HDPE: Resistência, rigidez e durabilidade \n LDPE: Flexível, leve e resistente à umidade \n LLDPE: Estrutura molecular linear'
+                        },
+                        pp: {
+                            title: 'Polipropileno',
+                            description: 'Termoplástico leve, resistente ao calor e produtos químicos.'
+                        },
+                        caco3: {
+                            title: 'Carbonato de Cálcio (CaCo3)',
+                            description: 'aditivo mineral que é misturado com polímeros (como PP ou PE) para reduzir custos, aumentar a rigidez e melhorar a processabilidade.'
+                        },
+                        engineering: {
+                            title: 'Plásticos de Engenharia',
+                            description: 'Grupo de plásticos de alto desempenho com melhor resistência mecânica, térmica e química que os plásticos comuns.'
+                        },
+                        pvc: {
+                            title: 'PVC (Policloreto de Vinila)',
+                            description: 'Resistente às intempéries e produtos químicos, com bom isolamento elétrico.'
+                        },
+                        pet: {
+                            title: 'PET (Politereftalato de Etileno)',
+                            description: 'Plástico transparente, forte e leve, muito usado em garrafas, recipientes e têxteis (poliéster). Reciclável, com boa barreira contra gases. Adequado para alimentos e bebidas devido à sua segurança e clareza.'
+                        }
+                    },
+                    soluciones: {
+                        title: 'Soluções',
+                        subtitle: 'Abastecimento Estratégico e Assistência Técnica',
+                        description: 'Fornecemos soluções integrais no abastecimento de matérias-primas plásticas vitais para a indústria. Incluindo assistência técnica, desenvolvimento de produtos, soluções logísticas e financeiras; associados às principais petroquímicas internacionais com vasta experiência no mercado.',
+                        features: {
+                            transporte: {
+                                title: 'Transporte seguro',
+                                description: 'Temos os melhores serviços de transporte'
+                            },
+                            eficiencia: {
+                                title: 'Eficiência',
+                                description: 'Otimização em processos de documentos e procedimentos'
+                            },
+                            seguridad: {
+                                title: 'Segurança',
+                                description: 'Processo seguro de ponta a ponta até a entrega'
+                            }
+                        }
+                    },
+                    contacto: {
+                        title: 'Contato',
+                        nombre: 'Nome',
+                        email: 'Email',
+                        mensaje: 'Mensagem',
+                        enviar: 'Enviar Mensagem'
+                    },
+                    footer: {
+                        copyright: '© ISEC S.A. Todos os direitos reservados.',
+                        ubicacion: 'Localização',
+                        email: 'Email: info@isecpolymers.com',
+                        telefono: 'Telefone: +1 234 567 890'
+                    },
+                    kpi: {
+                        paises: 'Países',
+                        toneladas: 'ton/mês',
+                        industrias: 'Indústrias',
+                        clientes: 'Clientes'
+                    },
+                    partners: {
+                        title: 'Principais Clientes e Parceiros',
+                        subtitle: 'Colaboramos com as empresas mais importantes do setor para oferecer materiais da mais alta qualidade',
+                        description: 'Breve descrição do parceiro'
+                    },
+                    form: {
+                        nombre: 'Nome',
+                        email: 'Email',
+                        mensaje: 'Mensagem',
+                        enviar: 'Enviar Mensagem',
+                        success: {
+                            title: 'Sucesso',
+                            message: 'Sua mensagem foi enviada com sucesso'
+                        }
+                    }
+                }
+            };
+            
+            // Load saved language preference
+            const savedLanguage = localStorage.getItem('selectedLanguage') || 'es';
+            desktopSelector.value = savedLanguage;
+            mobileSelector.value = savedLanguage;
+
+            // Function to handle language change
+            function handleLanguageChange(language) {
+                localStorage.setItem('selectedLanguage', language);
+                
+                // Update both selectors to stay in sync
+                desktopSelector.value = language;
+                mobileSelector.value = language;
+
+                const t = translations[language];
+
+                // Update navigation
+                document.querySelectorAll('.nav-link').forEach((link, index) => {
+                    const keys = ['nosotros', 'productos', 'soluciones', 'contacto'];
+                    if (keys[index]) link.textContent = t.nav[keys[index]];
+                });
+
+                // Update mobile menu
+                document.querySelectorAll('#mobile-menu a').forEach((link, index) => {
+                    const keys = ['nosotros', 'productos', 'soluciones', 'contacto'];
+                    if (keys[index]) link.textContent = t.nav[keys[index]];
+                });
+
+                // Update hero section
+                document.querySelector('#hero h1').textContent = t.hero.title;
+                document.querySelector('#hero p').textContent = t.hero.subtitle;
+
+                // Update nosotros section
+                document.querySelector('#nosotros h2').textContent = t.nosotros.title;
+                document.querySelector('#nosotros p').textContent = t.nosotros.description;
+
+                // Update productos section
+                document.querySelector('#productos h2').textContent = t.productos.title;
+                const productCards = document.querySelectorAll('.product-card');
+                productCards[0].querySelector('h3').textContent = t.productos.hdpe.title;
+                productCards[0].querySelector('p').textContent = t.productos.hdpe.description;
+                productCards[1].querySelector('h3').textContent = t.productos.pp.title;
+                productCards[1].querySelector('p').textContent = t.productos.pp.description;
+                productCards[2].querySelector('h3').textContent = t.productos.caco3.title;
+                productCards[2].querySelector('p').textContent = t.productos.caco3.description;
+                productCards[3].querySelector('h3').textContent = t.productos.engineering.title;
+                productCards[3].querySelector('p').textContent = t.productos.engineering.description;
+                productCards[4].querySelector('h3').textContent = t.productos.pvc.title;
+                productCards[4].querySelector('p').textContent = t.productos.pvc.description;
+                productCards[5].querySelector('h3').textContent = t.productos.pet.title;
+                productCards[5].querySelector('p').textContent = t.productos.pet.description;
+
+                // Update KPI section
+                const kpiLabels = document.querySelectorAll('.kpi-item p');
+                if (kpiLabels.length >= 4) {
+                    kpiLabels[0].textContent = t.kpi.paises;
+                    kpiLabels[1].textContent = t.kpi.toneladas;
+                    kpiLabels[2].textContent = t.kpi.industrias;
+                    kpiLabels[3].textContent = t.kpi.clientes;
+                }
+
+                // Update Partners section
+                const partnersSection = document.querySelector('#marcas');
+                if (partnersSection) {
+                    partnersSection.querySelector('h2').textContent = t.partners.title;
+                    partnersSection.querySelector('p').textContent = t.partners.subtitle;
+                    partnersSection.querySelectorAll('.brand-card p').forEach(p => {
+                        p.textContent = t.partners.description;
+                    });
+                }
+
+                // Update soluciones section
+                const solucionesSection = document.querySelector('#soluciones');
+                if (solucionesSection) {
+                    // Update main title
+                    const mainTitle = solucionesSection.querySelector('h2');
+                    if (mainTitle) mainTitle.textContent = t.soluciones.title;
+
+                    // Update subtitle and description
+                    const subtitle = solucionesSection.querySelector('h3');
+                    if (subtitle) subtitle.textContent = t.soluciones.subtitle;
+
+                    const description = solucionesSection.querySelector('p');
+                    if (description) description.textContent = t.soluciones.description;
+
+                    // Update feature cards
+                    const featureCards = solucionesSection.querySelectorAll('.text-center');
+                    if (featureCards.length >= 3) {
+                        // Transport card
+                        const transportCard = featureCards[0];
+                        const transportTitle = transportCard.querySelector('h4');
+                        const transportDesc = transportCard.querySelector('p');
+                        if (transportTitle) transportTitle.textContent = t.soluciones.features.transporte.title;
+                        if (transportDesc) transportDesc.textContent = t.soluciones.features.transporte.description;
+
+                        // Efficiency card
+                        const efficiencyCard = featureCards[1];
+                        const efficiencyTitle = efficiencyCard.querySelector('h4');
+                        const efficiencyDesc = efficiencyCard.querySelector('p');
+                        if (efficiencyTitle) efficiencyTitle.textContent = t.soluciones.features.eficiencia.title;
+                        if (efficiencyDesc) efficiencyDesc.textContent = t.soluciones.features.eficiencia.description;
+
+                        // Security card
+                        const securityCard = featureCards[2];
+                        const securityTitle = securityCard.querySelector('h4');
+                        const securityDesc = securityCard.querySelector('p');
+                        if (securityTitle) securityTitle.textContent = t.soluciones.features.seguridad.title;
+                        if (securityDesc) securityDesc.textContent = t.soluciones.features.seguridad.description;
+                    }
+                }
+
+                // Update contacto section
+                const contactoSection = document.querySelector('#contacto');
+                if (contactoSection) {
+                    // Update title
+                    const title = contactoSection.querySelector('h2');
+                    if (title) title.textContent = t.contacto.title;
+
+                    // Update form
+                    const form = contactoSection.querySelector('#contact-form');
+                    if (form) {
+                        // Update labels
+                        const labels = form.querySelectorAll('label');
+                        labels.forEach((label, index) => {
+                            if (index === 0) label.textContent = t.form.nombre;
+                            if (index === 1) label.textContent = t.form.email;
+                            if (index === 2) label.textContent = t.form.mensaje;
+                        });
+
+                        // Update placeholders
+                        const inputs = form.querySelectorAll('input, textarea');
+                        inputs.forEach((input, index) => {
+                            if (index === 0) input.placeholder = t.form.nombre;
+                            if (index === 1) input.placeholder = t.form.email;
+                            if (index === 2) input.placeholder = t.form.mensaje;
+                        });
+
+                        // Update submit button
+                        const submitButton = form.querySelector('.submit-button');
+                        if (submitButton) submitButton.textContent = t.form.enviar;
+                    }
+                }
+
+                // Update Toast notification
+                const toast = document.querySelector('.toast');
+                if (toast) {
+                    const text1 = toast.querySelector('.text-1');
+                    const text2 = toast.querySelector('.text-2');
+                    if (text1) text1.textContent = t.form.success.title;
+                    if (text2) text2.textContent = t.form.success.message;
+                }
+
+                // Update Footer
+                const footer = document.querySelector('footer');
+                if (footer) {
+                    // Update contact section
+                    const contactSection = footer.querySelector('.footer-section:nth-child(2)');
+                    if (contactSection) {
+                        const contactTitle = contactSection.querySelector('h4');
+                        if (contactTitle) contactTitle.textContent = t.contacto.title;
+
+                        const contactParagraphs = contactSection.querySelectorAll('p');
+                        if (contactParagraphs.length >= 2) {
+                            contactParagraphs[0].textContent = t.footer.email;
+                            contactParagraphs[1].textContent = t.footer.telefono;
+                        }
+                    }
+
+                    // Update location section
+                    const locationSection = footer.querySelector('.footer-section:nth-child(3)');
+                    if (locationSection) {
+                        const locationTitle = locationSection.querySelector('h4');
+                        if (locationTitle) locationTitle.textContent = t.footer.ubicacion;
+                    }
+
+                    // Update copyright
+                    const copyright = footer.querySelector('.text-gray-400');
+                    if (copyright) copyright.textContent = t.footer.copyright;
+                }
+            }
+
+            // Add event listeners to both selectors
+            desktopSelector.addEventListener('change', (e) => handleLanguageChange(e.target.value));
+            mobileSelector.addEventListener('change', (e) => handleLanguageChange(e.target.value));
+
+            // Initial language load
+            handleLanguageChange(savedLanguage);
+        });
+    </script>
+</body>
+</html> 
