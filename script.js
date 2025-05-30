@@ -287,6 +287,8 @@ const translations = {
     }
 };
 
+console.log('script.js loaded');
+
 let desktopSelector;
 let mobileSelector;
 
@@ -336,6 +338,7 @@ document.querySelectorAll('#mobile-menu a').forEach(link => {
 
 // Carousel functionality
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOMContentLoaded fired');
     const carousel = document.getElementById('nosotros-carousel');
     if (!carousel) return;
 
@@ -395,6 +398,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Forzar la actualización inicial
     updateCarousel();
+
+    desktopSelector = document.getElementById('desktop-language-selector');
+    mobileSelector = document.getElementById('mobile-language-selector');
+    
+    console.log('Desktop selector found:', !!desktopSelector);
+    console.log('Mobile selector found:', !!mobileSelector);
+
+    if (desktopSelector) {
+        desktopSelector.addEventListener('change', (e) => {
+            console.log('Desktop selector change event:', e.target.value);
+            handleLanguageChange(e.target.value);
+        });
+    }
+    
+    if (mobileSelector) {
+        mobileSelector.addEventListener('change', (e) => {
+            console.log('Mobile selector change event:', e.target.value);
+            handleLanguageChange(e.target.value);
+        });
+    }
+
+    // Cargar el idioma guardado al inicio
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'es';
+    console.log('Saved language:', savedLanguage);
+    handleLanguageChange(savedLanguage);
 });
 
 // Brands carousel animation
@@ -560,21 +588,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Function to handle language change
 function handleLanguageChange(language) {
-    console.log('Changing language to:', language);
+    console.log('Entering handleLanguageChange. Language:', language);
     localStorage.setItem('selectedLanguage', language);
     
     // Update both selectors to stay in sync
-    desktopSelector.value = language;
-    mobileSelector.value = language;
+    if (desktopSelector) desktopSelector.value = language;
+    if (mobileSelector) mobileSelector.value = language;
 
     const t = translations[language];
-    console.log('Translations for language:', t);
+    console.log('Attempting to get translations for:', language, 'Result:', !!t);
 
     // Fade out
     document.body.style.opacity = '0';
 
     // Wait for fade out to complete
     setTimeout(() => {
+        console.log('Inside setTimeout, calling updateContent');
         // Update all content
         updateContent(t);
         
@@ -585,6 +614,7 @@ function handleLanguageChange(language) {
 
 // Function to update all content
 function updateContent(t) {
+    console.log('Entering updateContent');
     // Update navigation
     document.querySelectorAll('.nav-link').forEach((link, index) => {
         const keys = ['nosotros', 'productos', 'soluciones', 'contacto'];
@@ -733,28 +763,4 @@ function updateContent(t) {
         const copyright = footer.querySelector('.text-gray-400');
         if (copyright) copyright.textContent = t.footer.copyright;
     }
-}
-
-// Asegurarse de que los event listeners estén correctamente configurados
-document.addEventListener('DOMContentLoaded', function() {
-    desktopSelector = document.getElementById('desktop-language-selector');
-    mobileSelector = document.getElementById('mobile-language-selector');
-    
-    if (desktopSelector) {
-        desktopSelector.addEventListener('change', (e) => {
-            console.log('Desktop selector changed to:', e.target.value); // Debug log
-            handleLanguageChange(e.target.value);
-        });
-    }
-    
-    if (mobileSelector) {
-        mobileSelector.addEventListener('change', (e) => {
-            console.log('Mobile selector changed to:', e.target.value); // Debug log
-            handleLanguageChange(e.target.value);
-        });
-    }
-
-    // Cargar el idioma guardado al inicio
-    const savedLanguage = localStorage.getItem('selectedLanguage') || 'es';
-    handleLanguageChange(savedLanguage);
-}); 
+} 
