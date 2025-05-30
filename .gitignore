@@ -7,3 +7,8 @@ node_modules/
 # Archivos del sistema
 .DS_Store
 Thumbs.db 
+
+# Archivos específicos
+robots.txt
+README.md
+sitemap.xml 
