@@ -19,7 +19,7 @@ const translations = {
             title: 'Nuestros Productos',
             hdpe: {
                 title: 'Polietileno HDPE/LDPE/LLDPE',
-                description: 'HDPE: Resistencia, rigidez y durabilidad \n LDPE: Flexible, liviano y resistente a la humedad \n LLDPE: Estructura molecular lineal'
+                description: '<strong>HDPE</strong>: Resistencia, rigidez y durabilidad <br> <strong>LDPE</strong>: Flexible, liviano y resistente a la humedad <br> <strong>LLDPE</strong>: Estructura molecular lineal'
             },
             pp: {
                 title: 'Polipropileno',
@@ -27,7 +27,7 @@ const translations = {
             },
             caco3: {
                 title: 'Carbonato de Calcio (CaCo3)',
-                description: 'aditivo mineral que se mezcla con polímeros (como PP o PE) para reducir costos, aumentar rigidez y mejorar procesabilidad.'
+                description: 'Aditivo mineral que se mezcla con polímeros (como PP o PE) para reducir costos, aumentar rigidez y mejorar procesabilidad.'
             },
             engineering: {
                 title: 'Plasticos De Ingeniería',
@@ -38,7 +38,7 @@ const translations = {
                 description: 'Resistente a la intemperie y químicos, con buena aislación eléctrica.'
             },
             pet: {
-                title: 'PET  (Polietileno Tereftalato)',
+                title: 'PET (Polietileno Tereftalato)',
                 description: 'Plástico transparente, fuerte y liviano, muy usado en botellas, envases y textiles (poliéster). Reciclable, con buena barrera contra gases. Apto para alimentos y bebidas por su seguridad y claridad.'
             }
         },
@@ -48,16 +48,16 @@ const translations = {
             description: 'Brindamos soluciones integrales en el abastecimiento de materias primas plásticas vitales para la industria. Comprendiendo asistencia técnica, desarrollo de productos, soluciones logísticas y financieras; asociados a las principales petroquímicas a nivel internacional contando con gran experiencia en el mercado.',
             features: {
                 transporte: {
-                    title: 'Transporte seguro',
-                    description: 'Contamos con los mejores servicios de transporte'
+                    title: 'Eficiencia',
+                    description: 'Gestión optimizada de documentación, logística y procesos aduaneros para garantizar tiempos competitivos.'
                 },
                 eficiencia: {
-                    title: 'Eficiencia',
-                    description: 'Optimizacion en procesos de documentos y tramites'
+                    title: 'Trazabilidad',
+                    description: 'Seguimiento integral desde el origen de la materia prima hasta la llegada a planta.'
                 },
                 seguridad: {
-                    title: 'Seguridad',
-                    description: 'Proceso seguro de punta a punta hasta la entrega'
+                    title: 'Confianza:',
+                    description: 'Procesos seguros, verificados y respaldados en cada etapa del circuito comercial y logístico.'
                 }
             }
         },
@@ -114,7 +114,7 @@ const translations = {
             title: 'Our Products',
             hdpe: {
                 title: 'Polyethylene HDPE/LDPE/LLDPE',
-                description: 'HDPE: Strength, rigidity and durability \n LDPE: Flexible, lightweight and moisture resistant \n LLDPE: Linear molecular structure'
+                description: '<strong>HDPE</strong>: Strength, rigidity and durability <br> <strong>LDPE</strong>: Flexible, lightweight and moisture resistant <br> <strong>LLDPE</strong>: Linear molecular structure'
             },
             pp: {
                 title: 'Polypropylene',
@@ -122,7 +122,7 @@ const translations = {
             },
             caco3: {
                 title: 'Calcium Carbonate (CaCo3)',
-                description: 'mineral additive that is mixed with polymers (such as PP or PE) to reduce costs, increase rigidity and improve processability.'
+                description: 'Mineral additive that is mixed with polymers (such as PP or PE) to reduce costs, increase rigidity and improve processability.'
             },
             engineering: {
                 title: 'Engineering Plastics',
@@ -143,16 +143,16 @@ const translations = {
             description: 'We provide comprehensive solutions in the supply of plastic raw materials vital to the industry. Including technical assistance, product development, logistics and financial solutions; associated with the main international petrochemical companies with extensive market experience.',
             features: {
                 transporte: {
-                    title: 'Safe transport',
-                    description: 'We have the best transport services'
+                    title: 'Efficiency',
+                    description: 'Optimized management of documentation, logistics, and customs processes to ensure competitive timings.'
                 },
                 eficiencia: {
-                    title: 'Efficiency',
-                    description: 'Optimization in document processes and procedures'
+                    title: 'Traceability',
+                    description: 'Comprehensive tracking from raw material origin to plant arrival.'
                 },
                 seguridad: {
-                    title: 'Security',
-                    description: 'Secure end-to-end process until delivery'
+                    title: 'Trust:',
+                    description: 'Secure, verified, and supported processes at every stage of the commercial and logistical circuit.'
                 }
             }
         },
@@ -209,7 +209,7 @@ const translations = {
             title: 'Nossos Produtos',
             hdpe: {
                 title: 'Polietileno HDPE/LDPE/LLDPE',
-                description: 'HDPE: Resistência, rigidez e durabilidade \n LDPE: Flexível, leve e resistente à umidade \n LLDPE: Estrutura molecular linear'
+                description: '<strong>HDPE</strong>: Resistência, rigidez e durabilidade <br> <strong>LDPE</strong>: Flexível, leve e resistente à umidade <br> <strong>LLDPE</strong>: Estrutura molecular linear'
             },
             pp: {
                 title: 'Polipropileno',
@@ -217,7 +217,7 @@ const translations = {
             },
             caco3: {
                 title: 'Carbonato de Cálcio (CaCo3)',
-                description: 'aditivo mineral que é misturado com polímeros (como PP ou PE) para reduzir custos, aumentar a rigidez e melhorar a processabilidade.'
+                description: 'Aditivo mineral que é misturado com polímeros (como PP ou PE) para reduzir custos, aumentar a rigidez e melhorar a processabilidade.'
             },
             engineering: {
                 title: 'Plásticos de Engenharia',
@@ -238,16 +238,16 @@ const translations = {
             description: 'Fornecemos soluções integrais no abastecimento de matérias-primas plásticas vitais para a indústria. Incluindo assistência técnica, desenvolvimento de produtos, soluções logísticas e financeiras; associados às principais petroquímicas internacionais com vasta experiência no mercado.',
             features: {
                 transporte: {
-                    title: 'Transporte seguro',
-                    description: 'Temos os melhores serviços de transporte'
+                    title: 'Eficiencia',
+                    description: 'Gerenciamento otimizado de documentação, logística e processos alfandegários para garantir prazos competitivos.'
                 },
                 eficiencia: {
-                    title: 'Eficiencia',
-                    description: 'Otimização em processos de documentos e procedimentos'
+                    title: 'Rastreabilidade',
+                    description: 'Acompanhamento integral desde a origem da matéria-prima até a chegada à planta.'
                 },
                 seguridad: {
-                    title: 'Segurança',
-                    description: 'Processo seguro de ponta a ponta até a entrega'
+                    title: 'Confiança:',
+                    description: 'Processos seguros, verificados e respaldados em cada etapa do circuito comercial e logístico.'
                 }
             }
         },
@@ -266,7 +266,7 @@ const translations = {
         },
         kpi: {
             paises: 'Países',
-            toneladas: 'Tipos de materiais',
+            toneladas: 'Tipos de materiales',
             industrias: 'Indústrias'
         },
         partners: {
@@ -638,18 +638,30 @@ function updateContent(t) {
     // Update productos section
     document.querySelector('#productos h2').textContent = t.productos.title;
     const productCards = document.querySelectorAll('.product-card');
-    productCards[0].querySelector('h3').textContent = t.productos.hdpe.title;
-    productCards[0].querySelector('p').textContent = t.productos.hdpe.description;
-    productCards[1].querySelector('h3').textContent = t.productos.pp.title;
-    productCards[1].querySelector('p').textContent = t.productos.pp.description;
-    productCards[2].querySelector('h3').textContent = t.productos.caco3.title;
-    productCards[2].querySelector('p').textContent = t.productos.caco3.description;
-    productCards[3].querySelector('h3').textContent = t.productos.engineering.title;
-    productCards[3].querySelector('p').textContent = t.productos.engineering.description;
-    productCards[4].querySelector('h3').textContent = t.productos.pvc.title;
-    productCards[4].querySelector('p').textContent = t.productos.pvc.description;
-    productCards[5].querySelector('h3').textContent = t.productos.pet.title;
-    productCards[5].querySelector('p').textContent = t.productos.pet.description;
+    if (productCards.length > 0) {
+        productCards[0].querySelector('h3').textContent = t.productos.hdpe.title;
+        productCards[0].querySelector('p').innerHTML = t.productos.hdpe.description;
+    }
+    if (productCards.length > 1) {
+        productCards[1].querySelector('h3').textContent = t.productos.pp.title;
+        productCards[1].querySelector('p').textContent = t.productos.pp.description;
+    }
+    if (productCards.length > 2) {
+        productCards[2].querySelector('h3').textContent = t.productos.caco3.title;
+        productCards[2].querySelector('p').textContent = t.productos.caco3.description;
+    }
+    if (productCards.length > 3) {
+        productCards[3].querySelector('h3').textContent = t.productos.engineering.title;
+        productCards[3].querySelector('p').textContent = t.productos.engineering.description;
+    }
+    if (productCards.length > 4) {
+        productCards[4].querySelector('h3').textContent = t.productos.pvc.title;
+        productCards[4].querySelector('p').textContent = t.productos.pvc.description;
+    }
+    if (productCards.length > 5) {
+        productCards[5].querySelector('h3').textContent = t.productos.pet.title;
+        productCards[5].querySelector('p').textContent = t.productos.pet.description;
+    }
 
     // Update KPI section
     const kpiLabels = document.querySelectorAll('.kpi-item p');
@@ -681,25 +693,49 @@ function updateContent(t) {
         const description = solucionesSection.querySelector('p');
         if (description) description.textContent = t.soluciones.description;
 
-        const featureCards = solucionesSection.querySelectorAll('.text-center');
+        const featureCards = solucionesSection.querySelectorAll('.grid.md\\:grid-cols-3.gap-6 > .text-center');
+
+        console.log('Found', featureCards.length, 'solution feature cards with class .text-center');
+
         if (featureCards.length >= 3) {
-            const transportCard = featureCards[0];
-            const transportTitle = transportCard.querySelector('h4');
-            const transportDesc = transportCard.querySelector('p');
-            if (transportTitle) transportTitle.textContent = t.soluciones.features.transporte.title;
-            if (transportDesc) transportDesc.textContent = t.soluciones.features.transporte.description;
+            // Card 1 (Ship Icon) -> Use transporte key (Eficiencia)
+            const card1Title = featureCards[0].querySelector('h4');
+            const card1Desc = featureCards[0].querySelector('p');
+            if (card1Title) {
+                card1Title.textContent = t.soluciones.features.transporte.title;
+                console.log('Updated card 1 title to:', card1Title.textContent);
+            }
+            if (card1Desc) {
+                 card1Desc.textContent = t.soluciones.features.transporte.description;
+                 console.log('Updated card 1 description');
+            }
 
-            const efficiencyCard = featureCards[1];
-            const efficiencyTitle = efficiencyCard.querySelector('h4');
-            const efficiencyDesc = efficiencyCard.querySelector('p');
-            if (efficiencyTitle) efficiencyTitle.textContent = t.soluciones.features.eficiencia.title;
-            if (efficiencyDesc) efficiencyDesc.textContent = t.soluciones.features.eficiencia.description;
+            // Card 2 (Lightbulb Icon) -> Use eficiencia key (Trazabilidad)
+            const card2Title = featureCards[1].querySelector('h4');
+            const card2Desc = featureCards[1].querySelector('p');
+             if (card2Title) {
+                card2Title.textContent = t.soluciones.features.eficiencia.title;
+                 console.log('Updated card 2 title to:', card2Title.textContent);
+            }
+            if (card2Desc) {
+                card2Desc.textContent = t.soluciones.features.eficiencia.description;
+                 console.log('Updated card 2 description');
+            }
 
-            const securityCard = featureCards[2];
-            const securityTitle = securityCard.querySelector('h4');
-            const securityDesc = securityCard.querySelector('p');
-            if (securityTitle) securityTitle.textContent = t.soluciones.features.seguridad.title;
-            if (securityDesc) securityDesc.textContent = t.soluciones.features.seguridad.description;
+            // Card 3 (Shield Icon) -> Use seguridad key (Confianza)
+            const card3Title = featureCards[2].querySelector('h4');
+            const card3Desc = featureCards[2].querySelector('p');
+             if (card3Title) {
+                card3Title.textContent = t.soluciones.features.seguridad.title;
+                 console.log('Updated card 3 title to:', card3Title.textContent);
+            }
+            if (card3Desc) {
+                card3Desc.textContent = t.soluciones.features.seguridad.description;
+                 console.log('Updated card 3 description');
+            }
+
+        } else {
+            console.log('Not enough feature cards found with class .text-center to update solutions');
         }
     }
 
