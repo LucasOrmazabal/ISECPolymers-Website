@@ -80,9 +80,8 @@ const translations = {
             industrias: 'Industrias'
         },
         partners: {
-            title: 'Clientes y Partners Principales',
+            title: 'Partners Principales',
             subtitle: 'Colaboramos con las empresas más importantes del sector para ofrecer materiales de la más alta calidad',
-            description: 'Descripción breve del partner'
         },
         form: {
             nombre: 'Nombre',
@@ -175,9 +174,8 @@ const translations = {
             industrias: 'Industries'
         },
         partners: {
-            title: 'Main Clients and Partners',
+            title: 'Main Partners',
             subtitle: 'We collaborate with the most important companies in the sector to offer the highest quality materials',
-            description: 'Brief partner description'
         },
         form: {
             nombre: 'Name',
@@ -270,9 +268,8 @@ const translations = {
             industrias: 'Indústrias'
         },
         partners: {
-            title: 'Principais Clientes e Parceiros',
+            title: 'Principais Parceiros',
             subtitle: 'Colaboramos com as empresas mais importantes do setor para oferecer materiais da mais alta qualidade',
-            description: 'Breve descrição do parceiro'
         },
         form: {
             nombre: 'Nome',
